@@ -11,6 +11,7 @@ Nginx hardened image based on `alpine` [nginx image](https://hub.docker.com/_/ng
 * Default self signed certificate is generated at start
 * Some performance optimization
 * Stream configuration
+* DH parameters, 2048 bit long safe prime
 
 ## Usage
 
