@@ -2,25 +2,7 @@
 
 Nginx hardened image based on `alpine` [nginx image](https://hub.docker.com/_/nginx).
 
-## Main features
-
-* Don't expose Nginx version
-* Quad9 as default DNS resolver
-* TLSv1.2 & TLSv1.3 only
-* Disabled some weak ciphers
-* Default self signed certificate is generated at start
-* Some performance optimization
-* Stream configuration
-* DH parameters, 2048 bit long safe prime
-
-## Usage
-
-### Docker images
-
-Multi-arch docker images are available on [Docker Hub](https://hub.docker.com/r/jobdouma/nginx-hardening):
-
-* The `latest` tag is built from the main branch.  
-* The `latest` tag and the last release tag are refreshed nightly to get the latest security updates.
+Available on [Docker Hub](https://hub.docker.com/r/jobdouma/nginx-hardening):
 
 ```bash
 docker run --rm -it -p 8443:443 jobdouma/nginx-hardening
