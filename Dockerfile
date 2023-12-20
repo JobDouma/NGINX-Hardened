@@ -17,4 +17,6 @@ ENTRYPOINT \
     -nodes -keyout /etc/nginx/ssl/default_key.pem \
     -out /etc/nginx/ssl/default_cert.pem \
     -days 365 && \
+  openssl dhparam -out \
+     /etc/nginx/ssl/dhparam.pem 2048 && \
   nginx -g 'daemon off;'
