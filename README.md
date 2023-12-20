@@ -1,6 +1,4 @@
-# hardened-nginx
-
-[![CircleCI](https://circleci.com/gh/AdrienKuhn/hardened-nginx/tree/main.svg?style=shield&circle-token=69e438820478b6a4eaadac4e2b814f77889502e0)](https://circleci.com/gh/AdrienKuhn/hardened-nginx/tree/main)
+# NGINX-Hardening
 
 Nginx hardened image based on `alpine` [nginx image](https://hub.docker.com/_/nginx).
 
@@ -18,11 +16,11 @@ Nginx hardened image based on `alpine` [nginx image](https://hub.docker.com/_/ng
 
 ### Docker images
 
-Multi-arch docker images are available on [Docker Hub](https://hub.docker.com/r/krewh/hardened-nginx):
+Multi-arch docker images are available on [Docker Hub](https://hub.docker.com/r/jobdouma/nginx-hardening):
 
 * The `latest` tag is built from the main branch.  
 * The `latest` tag and the last release tag are refreshed nightly to get the latest security updates.
 
 ```bash
-docker run --rm -it -p 8443:443 krewh/hardened-nginx
+docker run --rm -it -p 8443:443 jobdouma/nginx-hardening
 ```
